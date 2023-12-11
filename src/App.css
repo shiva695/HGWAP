@@ -1,0 +1,55 @@
+/* For home page cuisine slider, to hide horizontal scroll bar */
+.react-horizontal-scrolling-menu--scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.react-horizontal-scrolling-menu--scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* For google maps autocomplete to work inside the drawer (as drawer z-index is 1200) */
+.pac-container {
+  z-index: 1500 !important;
+}
+
+.active-scroll-spy {
+  box-shadow: inset 5px 0px 0px #f9881f;
+  /* border-radius: 15px; */
+  background: linear-gradient(
+    108.73deg,
+    #f9881f 23.73%,
+    #f9881f 23.73%,
+    #ff774c 79.34%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+::-webkit-scrollbar {
+  background-color: #fff;
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
